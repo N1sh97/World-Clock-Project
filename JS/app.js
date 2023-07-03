@@ -4,7 +4,7 @@ function updateTime() {
   let parisTimeElement = parisElement.querySelector(".time");
   let parisTime = moment().tz("Europe/Paris");
 
-  parisDateElement.innerHTML = parisTime.format("MMM D0 YYYY");
+  parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 
   let hongKongElement = document.querySelector("#hong-kong");
@@ -12,7 +12,7 @@ function updateTime() {
   let hongKongTimeElement = hongKongElement.querySelector(".time");
   let hongKongTime = moment().tz("Asia/Hong_Kong");
 
-  hongKongDateElement.innerHTML = hongKongTime.format("MMM D0 YYYY");
+  hongKongDateElement.innerHTML = hongKongTime.format("MMMM Do YYYY");
   hongKongTimeElement.innerHTML = hongKongTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
@@ -22,7 +22,7 @@ function updateTime() {
   let tokyoTimeElement = tokyoElement.querySelector(".time");
   let tokyoTime = moment().tz("Asia/Tokyo");
 
-  tokyoDateElement.innerHTML = tokyoTime.format("MMM D0 YYYY");
+  tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
   tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 }
 updateTime();
