@@ -25,5 +25,16 @@ function updateTime() {
   tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
   tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = ``
+}
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
