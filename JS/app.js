@@ -33,7 +33,7 @@ function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = ``
+  citiesElement.innerHTML = `Bitch`;
 }
 
 let citiesSelectElement = document.querySelector("#city");
